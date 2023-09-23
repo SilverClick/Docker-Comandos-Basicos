@@ -54,5 +54,28 @@ ping dam_ubu1
 ```
 
 Estos comandos crean otro contenedor con el nombre 'dam_ubu2' y luego conectan ambos contenedores a la red de puente (bridge) para permitir la comunicación entre ellos. Luego, se realiza un ping de un contenedor al otro.
+### 6.**Sal del terminal. ¿Qué ocurrió con el contenedor?**:
+
+Cuando cierras la terminal, los contenedores que se ejecutan en segundo plano siguen funcionando. Sin embargo, si utilizaste el comando `exit` dentro del contenedor, éste se detendrá.
+
+### 7.**¿Cuánta memoria en el disco duro ocupaste?**:
+
+Para verificar cuánto espacio en disco está utilizando Docker, puedes ejecutar el siguiente comando:
+
+```
+docker system df
+```
+
+Este comando mostrará la utilización de espacio en disco por parte de las imágenes, contenedores y volúmenes de Docker.
+
+### 8.**¿Cuánta RAM ocupan los contenedores? ¿Hay algún comando docker para saber esto?**:
+
+Puedes utilizar el siguiente comando para obtener información detallada sobre el uso de recursos de los contenedores:
+
+```
+docker stats
+```
+
+Este comando mostrará estadísticas en tiempo real de los contenedores en ejecución, incluyendo el uso de CPU, memoria y red.
 
 
